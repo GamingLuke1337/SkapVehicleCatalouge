@@ -16,7 +16,7 @@ end)
 
 Config = {}
 
-Config.Language = "en" -- "en", "de", "es" - available languages
+Config.Language = 'en' -- 'en', 'de', 'es', 'fr', 'it', 'nl', 'pt', 'ru - available languages
 
 Config.Categories = { 
     "compacts",
