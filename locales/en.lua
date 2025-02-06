@@ -1,0 +1,21 @@
+return {
+    notification_title = "Notification",
+    open_catalogue = "Open Catalogue",
+    vehicle_catalogue = "Vehicle Catalogue",
+    vehicle_categories = "Vehicle Categories",
+    choose_vehicle_reminder = "When you choose a vehicle, remember the name of it so the car dealer can give you the right vehicle!",
+    no_vehicles = "No vehicles were found in this category.",
+    preview_vehicle = "Vehicle: %s - Model: %s - Price: $%s - Category: %s",
+    brand = "Brand",
+    model = "Model",
+    unknown = "Unknown",
+    spawn_npc = "Vehicle Dealer spawned.",
+    delete_preview = "Preview vehicle deleted.",
+    vehicle_not_available = "This vehicle is not available.",
+    buy_vehicle = "Buy Vehicle",
+    confirm_purchase = "Are you sure you want to buy %s for $%s?",
+    insufficient_funds = "You do not have enough money!",
+    vehicle_purchased = "You have successfully purchased %s!",
+    npc_interact = "Talk to the dealer",
+    menu_close = "Close Menu"
+}

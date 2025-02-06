@@ -2,19 +2,17 @@ fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
 author 'Skap'
-description 'VehicleCatalouge for QBCore'
+description 'VehicleCatalouge for QB / ESX'
 version '1.0.0'
 
 shared_scripts {
     'config.lua',
-    '@ox_lib/init.lua'
+    '@ox_lib/init.lua' -- remove if not using ox_lib
 }
 
 client_scripts {
-    'client/main.lua'
-
+    'client/main.lua',
+    'locales/*.lua'
 }
 
-server_scripts {
-    'server/main.lua'
-}
+server_script 'server/main.lua'
