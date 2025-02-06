@@ -1,33 +1,49 @@
-QBCore = exports['qb-core']:GetCoreObject()
+QBCore = nil
+ESX = nil
+Framework = nil
+
+Citizen.CreateThread(function()
+    if GetResourceState("qb-core") == "started" then
+        QBCore = exports["qb-core"]:GetCoreObject()
+        Framework = "qb"
+    elseif GetResourceState("es_extended") == "started" then
+        ESX = exports["es_extended"]:getSharedObject()
+        Framework = "esx"
+    else
+        print("^1[SkapVehicleCatalogue] No compatible Framework found!^7")
+    end
+end)
 
 Config = {}
 
-Config.Categories = { -- Put all your categories here, 
-    "compacts", --1
-    "suvs", --2
-    "sports", --3
-    "super", --4
-    "sedans", --5
-    "muscle", --6
-    "sportsclassics", --7
-    "Motorcyklar", --8
-    "offroad", --9
-    "vans", --10
-    "cycles", --11
+Config.Language = "en" -- "en", "de", "es" - available languages
+
+Config.Categories = { 
+    "compacts",
+    "suvs",
+    "sports",
+    "super",
+    "sedans",
+    "muscle",
+    "sportsclassics",
+    "Motorcyklar",
+    "offroad",
+    "vans",
+    "cycles"
 }
 
-Config.PreviewCoords = vector4(-794.12, -218.87, 36.73, 239.71)  -- Where the preview vehicle will spawn (THIS IS NOT SYNCED WITH ALL THE PLAYERS YET. IT'S ONLY SYNCED FOR YOU)
+Config.PreviewCoords = vector4(-794.12, -218.87, 36.73, 239.71)
 Config.PreviewRotationSpeed = 0.5  
 
-Config.TargetType = 'ox'  -- 'qb' 'ox'
-Config.NotifyType = 'qb' -- 'qb' 'ox'
+Config.TargetType = 'ox'  -- 'qb', 'ox' or 'esx'
+Config.NotifyType = 'ox' -- 'qb', 'ox' or 'esx'
 
 Config.NPC = {
-    model = 'a_m_m_business_01', -- Preview ped
+    model = 'a_m_m_business_01',
     coords = vector4(-302.11, -810.56, 31.75, 159.16),  
 }
 
-Config.BlacklistedCategories = { -- Add those categories you want to be blacklisted from the vehicle catalouge!
+Config.BlacklistedCategories = {
     ["emergency"] = true,
     ["boats"] = true,
     ["planes"] = true,

@@ -40,9 +40,9 @@ local function sendNotification(message, type)
             description = message,
             type = type or 'info'
         })
-    elseif Framework == "qb" and QBCore then
+    elsif Config.NotifyType == 'qb' and QBCore then
         QBCore.Functions.Notify(message, type or "info")
-    elseif Framework == "esx" and ESX then
+    elseif Config.NotifyType == 'esx' and ESX then
         ESX.ShowNotification(message, type or "info")
     else
         print("[Notification] " .. message)
