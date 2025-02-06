@@ -1,0 +1,21 @@
+return {
+    notification_title = "Notificatie",
+    open_catalogue = "Open Catalogus",
+    vehicle_catalogue = "Voertuigcatalogus",
+    vehicle_categories = "Voertuigcategorieën",
+    choose_vehicle_reminder = "Wanneer je een voertuig kiest, onthoud dan de naam zodat de dealer je het juiste voertuig kan geven!",
+    no_vehicles = "Geen voertuigen gevonden in deze categorie.",
+    preview_vehicle = "Voertuig: %s - Model: %s - Prijs: $%s - Categorie: %s",
+    brand = "Merk",
+    model = "Model",
+    unknown = "Onbekend",
+    spawn_npc = "Voertuigdealer gespawnd.",
+    delete_preview = "Voorbeeldvoertuig verwijderd.",
+    vehicle_not_available = "Dit voertuig is niet beschikbaar.",
+    buy_vehicle = "Koop Voertuig",
+    confirm_purchase = "Weet je zeker dat je %s wilt kopen voor $%s?",
+    insufficient_funds = "Je hebt niet genoeg geld!",
+    vehicle_purchased = "Je hebt %s succesvol gekocht!",
+    npc_interact = "Praat met de dealer",
+    menu_close = "Sluit Menu"
+}
