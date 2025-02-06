@@ -1,0 +1,21 @@
+return {
+    notification_title = "Notification",
+    open_catalogue = "Ouvrir le catalogue",
+    vehicle_catalogue = "Catalogue des véhicules",
+    vehicle_categories = "Catégories de véhicules",
+    choose_vehicle_reminder = "Lorsque vous choisissez un véhicule, souvenez-vous de son nom pour que le concessionnaire puisse vous donner le bon véhicule !",
+    no_vehicles = "Aucun véhicule trouvé dans cette catégorie.",
+    preview_vehicle = "Véhicule : %s - Modèle : %s - Prix : $%s - Catégorie : %s",
+    brand = "Marque",
+    model = "Modèle",
+    unknown = "Inconnu",
+    spawn_npc = "Concessionnaire de véhicules apparu.",
+    delete_preview = "Aperçu du véhicule supprimé.",
+    vehicle_not_available = "Ce véhicule n'est pas disponible.",
+    buy_vehicle = "Acheter le véhicule",
+    confirm_purchase = "Êtes-vous sûr de vouloir acheter %s pour $%s ?",
+    insufficient_funds = "Vous n'avez pas assez d'argent !",
+    vehicle_purchased = "Vous avez acheté %s avec succès !",
+    npc_interact = "Parler au concessionnaire",
+    menu_close = "Fermer le menu"
+}
