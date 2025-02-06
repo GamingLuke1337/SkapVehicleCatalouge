@@ -7,7 +7,7 @@ version '1.0.0'
 
 shared_scripts {
     'config.lua',
-    '@ox_lib/init.lua'
+    '@ox_lib/init.lua' -- remove if not using ox_lib
 }
 
 client_scripts {
@@ -16,5 +16,3 @@ client_scripts {
 }
 
 server_script 'server/main.lua'
-
-dependency 'ox_lib'
